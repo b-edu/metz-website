@@ -1,0 +1,132 @@
+html, body {
+    /* Use Earthbound font imported in `<head>` */
+    font-family: 'EarthboundRegular', sans-serif;
+
+    /* Remove body's default margins */
+    margin: 0;
+}
+
+/* Wrapper for whole page */
+.main {
+    /* Set body to the center of the page */
+    max-width: 900px;
+    margin: 0 auto;
+
+    /* padding: 1rem 0; */
+    background: gray;
+}
+
+.btn {
+    text-decoration: none;
+    color: #1E293B;
+    background: #E2E8F0;
+    border-radius: .25rem;
+    padding: .5rem 1rem;
+}
+
+.btn:hover, .btn:focus {
+    background: #CBD5E1;
+}
+
+.btn-purple {
+    background: #5C66C1;
+    color: #ffffff;
+    border: 1.5px solid #32397a;
+}
+
+.btn-purple:hover, .btn-purple:focus {
+    background: #414992;
+}
+
+.nav-wrap {
+    margin: 0 auto;
+    margin: .5rem 1rem;
+}
+
+/* Wrapper around nav bar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: #cecece; */
+    width: 100%;
+}
+
+.nav-logo {
+    max-width: 100%;
+}
+
+.nav-links-wrap {
+    row-gap: .75rem;
+}
+
+.nav-links-wrap > .btn {
+    margin-right: 1rem;
+}
+
+.hero {
+    margin-bottom: 1rem;
+}
+
+.hero-img {
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/ham.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background: #BBC0ED;
+    box-shadow: 0px 4px 0px #5C66C1, 0px -4px 0px #5C66C1;
+    padding: 1rem;
+}
+
+.hero-banner-title-span {
+    color: #06004F;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.hero-banner-buttons .btn:not(:last-child) {
+    margin-right: .5rem;
+}
+
+/* Rules targeting medium screens, like phones and small tablets */
+@media screen and (max-width: 900px) {
+    .nav {
+        display: inline;
+        margin: 0 1rem;
+    }
+
+    .nav > * {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav > *:first-child {
+        margin-bottom: 1rem;
+    }
+
+    .nav-links-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* margin-bottom: 1rem; */
+    }
+
+    .hero-banner {
+        display: block;
+        padding-bottom: 1.6rem;
+    }
+
+    .hero-banner > *:first-child {
+        margin-bottom: 1rem;
+    }
+}
