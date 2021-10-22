@@ -31,10 +31,20 @@ html, body {
     width: 33%;
     padding-left: 10%;
 }
-#BoarHours {
-    visibility: hidden;
+.hoursOfOperation {
+    text-align: center;
 }
-
+#BoarHours {
+    display: none;
+    /*visibility: hidden;*/
+}
+.WorkHours > div > p{
+    background-color: #F1F5F9;
+}
+.WorkHours > div  :nth-child(even){
+    background-color: #414992;
+    color: #E2E8F0;
+}
 .btn {
     text-decoration: none;
     color: #1E293B;
