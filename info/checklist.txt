@@ -1,17 +1,17 @@
 # Requirements
-[ ] Visit NCFDining page to know where it is located on campus, all food locations available and hours open
-[ ] Find details about meal plans ( link to NCF page)
-[ ] Learn about exciting new events happening at NCF dining, feature dishes for the week, sustainability goals, COVID dining policies etc
-[ ] Find out more about Metz on social media
-[ ] Browse menu for the week, be able to see what is available today, tomorrow and for this week
-[ ] Be able to see picture of the food, calories and nutritional info
-[ ] Be able to only see food out by allergies and dietary requirements.
-[ ] Find coffee options on campus
-[ ] Order a Takeaway box from NCFDining  ( select 3 food options and 1 drink) and select a time for pick up
-[ ] Open this website on a browser on a tablet and a laptop ( flexible resizing)
-[ ] Create a food profile
-[ ] Find out about the NCF food pantry ( link to NCF page)
-[ ] Provide easy feedback to Metz about dining experience
-[ ] A student run food blog space - allowing users to post stories about their food journeys/experiences at student life events etc related to food.
-[ ] A footer banner which has your group name - says it's NCF class project
-
+(V for Vlad, B for Brendan)
+(V) 1. Visit NCFDining page to know where it is located on campus, all food locations available and hours open
+(B) 2. Find details about meal plans ( link to NCF page)
+(V) 3. Learn about exciting new events happening at NCF dining, feature dishes for the week, sustainability goals, COVID dining policies etc
+(B) 4. Find out more about Metz on social media
+(V) 5. Browse menu for the week, be able to see what is available today, tomorrow and for this week
+(B) 6. Be able to see picture of the food, calories and nutritional info
+(V) 7. Be able to only see food out by allergies and dietary requirements.
+(B) 8. Find coffee options on campus
+(V) 9. Order a Takeaway box from NCFDining  ( select 3 food options and 1 drink) and select a time for pick up
+(B) 10. Open this website on a browser on a tablet and a laptop ( flexible resizing)
+(V) 11. Create a food profile
+(B) 12. Find out about the NCF food pantry ( link to NCF page)
+(V) 13. Provide easy feedback to Metz about dining experience
+(B) 14. A student run food blog space - allowing users to post stories about their food journeys/experiences at student life events etc related to food.
+(V) 15. A footer banner which has your group name - says it's NCF class project
