@@ -1,2 +1,21 @@
 === Brendan ===
 - Main page layout
+- CSS lines 1-218
+- Find details about meal plans ( link to NCF page)
+- Find out more about Metz on social media
+- Open this website on a browser on a tablet and a laptop ( flexible resizing)
+- Find out about the NCF food pantry ( link to NCF page)
+- A student run food blog space - allowing users to post stories about their food journeys/experiences at student life events etc related to food.
+- (TODO) Be able to see picture of the food, calories and nutritional info
+- (TODO) Find coffee options on campus
+- Implemented at least once in JS:
+    - functions (blog.js, line #1)
+    - conditionals (social.js, line #9)
+    - loops (social.js, line #9)
+    - document object structure (blog.js, line #6)
+    - (TODO) forms & validation checks
+    - methods that access objects/constructors (blog.js, line #9)
+- blog.js
+- social.js
+- Navbar
+- Hero image and title
