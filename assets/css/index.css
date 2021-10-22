@@ -5,6 +5,9 @@ html, body {
 
     /* Remove body's default margins */
     margin: 0;
+
+    /* Ensure content doesn't hit the bottom of the body, making it look cut off when scrolling down */
+    padding-bottom: 3rem;
 }
 
 /* Wrapper for whole page (Brendan) */
@@ -213,3 +216,5 @@ hr {
 .light {
     opacity: .5;
 }
+
+/***********************VLAD************************/
