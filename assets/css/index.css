@@ -1,21 +1,20 @@
+/* General rules for body (Brendan) */
 html, body {
     /* Use Earthbound font imported in `<head>` */
-    font-family: 'EarthboundRegular', sans-serif;
+    font-family: 'LinikSansRegular', sans-serif;
 
     /* Remove body's default margins */
     margin: 0;
 }
 
-/* Wrapper for whole page */
+/* Wrapper for whole page (Brendan) */
 .main {
     /* Set body to the center of the page */
     max-width: 900px;
     margin: 0 auto;
-
-    /* padding: 1rem 0; */
-    background: gray;
 }
 
+/* General button element to apply to <a> elements (Brendan) */
 .btn {
     text-decoration: none;
     color: #1E293B;
@@ -24,26 +23,29 @@ html, body {
     padding: .5rem 1rem;
 }
 
+/* Make button darker on hover or focus (Brendan) */
 .btn:hover, .btn:focus {
     background: #CBD5E1;
 }
 
+/* Alternative purple button (Brendan) */
 .btn-purple {
     background: #5C66C1;
     color: #ffffff;
     border: 1.5px solid #32397a;
 }
 
+/* Alternative purple button hover and focus (Brendan) */
 .btn-purple:hover, .btn-purple:focus {
     background: #414992;
 }
 
+/* Wrap around `.nav` element. This fixes a glitch applying margin to the main `.nav` class (Brendan) */
 .nav-wrap {
-    margin: 0 auto;
     margin: .5rem 1rem;
 }
 
-/* Wrapper around nav bar */
+/* Wrapper around `.nav` children (Brendan) */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -52,22 +54,27 @@ html, body {
     width: 100%;
 }
 
+/* Nav image (Brendan) */
 .nav-logo {
     max-width: 100%;
 }
 
+/* Add 0.75rem padding between rows of nav links if they wrap (Brendan) */
 .nav-links-wrap {
     row-gap: .75rem;
 }
 
+/* Add a right margin to all `.btn` elements in `.nav-links-wrap` (Brendan) */
 .nav-links-wrap > .btn {
     margin-right: 1rem;
 }
 
+/* Main hero element (Brendan) */
 .hero {
     margin-bottom: 1rem;
 }
 
+/* Ham background (Brendan) */
 .hero-img {
     width: 100%;
     height: 200px;
@@ -77,6 +84,7 @@ html, body {
     background-size: cover;
 }
 
+/* Text banner below Ham background (Brendan) */
 .hero-banner {
     display: flex;
     justify-content: space-between;
@@ -87,17 +95,19 @@ html, body {
     padding: 1rem;
 }
 
+/* Text inside Ham text banner (Brendan) */
 .hero-banner-title-span {
     color: #06004F;
     font-weight: 700;
     font-size: 1.7rem;
 }
 
+/* Add a right margin for all hero buttons but the last (Brendan) */
 .hero-banner-buttons .btn:not(:last-child) {
     margin-right: .5rem;
 }
 
-/* Rules targeting medium screens, like phones and small tablets */
+/* Rules targeting medium screens, like phones and small tablets (Brendan) */
 @media screen and (max-width: 900px) {
     .nav {
         display: inline;
@@ -129,4 +139,77 @@ html, body {
     .hero-banner > *:first-child {
         margin-bottom: 1rem;
     }
+
+    .main {
+        padding: 0 1rem;
+    }
+}
+
+/* Callout box (Brendan) */
+.box {
+    display: grid;
+    margin: 1rem 0;
+    padding: 2rem;
+    background: #F1F5F9;
+    border: 2px solid #E2E8F0;
+    border-radius: .5rem;
+}
+
+/* Subclass of `.box` which spreads elements evenly across (Brendan) */
+.box.box-spread {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+/* (Brendan) */
+.box-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/* Container holding `.icon` elements (Brendan) */
+.icon-wrap {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+/* (Brendan) */
+.icon {
+    width: 40px;
+}
+
+/* Select all top-level children elements in `.icon-wrap` _except_ the last one (Brendan) */
+.icon-wrap > *:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+.slim {
+    margin-bottom: .25rem;
+}
+
+p {
+    margin-top: 0;
+}
+
+hr {
+    border: none;
+    border-bottom: 2px solid #CBD5E1;
+}
+
+/* "margin bottom" utility class (Brendan) */
+.mb {
+    margin-bottom: 0.5rem;
+}
+
+/* Remove bottom margin utility class (Brendan) */
+.no-mb {
+    margin-bottom: 0;
+}
+
+/* Utility class to lighten text (Brendan) */
+.light {
+    opacity: .5;
 }

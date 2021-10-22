@@ -1,2 +1,3 @@
 === Brendan ===
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://fontlibrary.org/en/font/linik-sans (Font used)
