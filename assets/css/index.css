@@ -15,17 +15,18 @@ html, body {
     /* Set body to the center of the page */
     max-width: 100%;
     margin: 0 auto;
-<<<<<<< Updated upstream
-}
-
-/* General button element to apply to <a> elements (Brendan) */
-=======
-
-    /* padding: 1rem 0; */
     background: rgb(226, 205, 205);
 
     display: flex;
+
 }
+
+/* General button element to apply to <a> elements (Brendan) */
+
+
+    /* padding: 1rem 0; */
+    
+
 .main > div {
     width: 33%;
     padding-left: 10%;
@@ -33,7 +34,7 @@ html, body {
 #BoarHours {
     visibility: hidden;
 }
->>>>>>> Stashed changes
+
 .btn {
     text-decoration: none;
     color: #1E293B;
