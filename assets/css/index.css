@@ -29,7 +29,7 @@ html, body {
 
 .main > div {
     width: 33%;
-    padding-left: 10%;
+    padding-left: 5%;
 }
 .hoursOfOperation {
     text-align: center;
@@ -54,7 +54,7 @@ html, body {
 
 .mainUnderworld > div{
     width: 40%;
-    padding-left: 10%;
+    padding-left: 5%;
     
 }
 
