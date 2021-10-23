@@ -45,6 +45,47 @@ html, body {
     background-color: #414992;
     color: #E2E8F0;
 }
+
+.mainUnderworld {
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.mainUnderworld > div{
+    width: 40%;
+    padding-left: 10%;
+    
+}
+
+.quickMenu {
+    text-align: center;
+}
+
+#quickMenuBoard {
+    background-color: antiquewhite;
+}
+
+#quickMenuButtons {
+    
+    text-align: center;
+    align-items: center;
+}
+#quickMenuButtons > button{
+    color: #E2E8F0;
+    background-color: #414992;
+
+}
+
+
+#specialEventsMonths > button{
+    background-color: antiquewhite;
+}
+
+#specialEventsBoard {
+    background-color: antiquewhite;
+}
+
 .btn {
     text-decoration: none;
     color: #1E293B;
