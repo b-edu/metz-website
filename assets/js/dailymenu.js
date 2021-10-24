@@ -9,6 +9,55 @@
         this.description = description;
     }
 }*/
+var openButton = document.getElementById("OpenButton");
+var closeButton = document.getElementById("CloseButton");
+var overlay = document.getElementById("overlay");
+
+var vegetarian = document.getElementById("vegetarian");
+var vegan = document.getElementById("vegan");
+var halal = document.getElementById("halal");
+var kosher = document.getElementById("kosher");
+var gluten = document.getElementById("gluten-free");
+
+vegetarian.addEventListener('clcik', () => {
+    var option = document.getElementById("vegetarian");
+    selected(option);
+})
+
+vegetarian.onclick = function () {selected(vegetarian)};
+vegan.onclick = function () {selected(vegan)};
+kosher.onclick = function () {selected(kosher)};
+halal.onclick = function () {selected(halal)};
+gluten.onclick = function () {selected(gluten)};
+
+function selected(option){
+    
+    option.classList.toggle("active");
+}
+
+openButton.addEventListener('click', () => {
+    var menu = document.getElementById("DietSelectionMenu");
+    openMenu(menu);
+})
+closeButton.addEventListener('click', () => {
+    var menu = document.getElementById("DietSelectionMenu");
+    closeMenu(menu);
+})
+function openMenu(menu){
+    if (menu == null){
+        return;
+    }
+    menu.classList.add("active");
+    overlay.classList.add("active");
+}
+
+function closeMenu(menu){
+    if (menu == null){
+        return;
+    }
+    menu.classList.remove("active");
+    overlay.classList.remove("active");
+}
 
 function MenuOption (name, desc){
     this.name = name;

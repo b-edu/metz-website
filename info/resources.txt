@@ -2,3 +2,7 @@
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 https://fontlibrary.org/en/font/linik-sans (Font used)
 https://javatpoint.com/javascript-onclick-event
+
+
+Vlad:
+https://www.youtube.com/watch?v=MBaw_6cPmAw - This video was used for the Diet and Allergy Selection Menu.

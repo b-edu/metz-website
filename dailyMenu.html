@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/dailymenu.css">
     
 </head>
-<body>
+<body >
     <div class = "upperPanel">
         <div class = "DailyMenuBanner">
             <a href="index.html" class="btn btn-purple">Home</a>
@@ -18,11 +18,53 @@
         </div>
         <div class = "Allergy">
             
-            <button class="btn btn-purple ">
+            <button class="btn btn-purple " id = "OpenButton">
                 Allergy and Diet Selection
 
             </button>
+            <div id = "DietSelectionMenu">
+                <div id = "DietSelectionMenuHead">
+                    <div id = "DietSelectionMenuTitle">
+                        Allergy and Diet Selection Menu
+                    </div>
+                    
+                    <div id = "CloseButton">
+                        &times;
+                    </div>
+                    
+                </div>
+                <div id = "SaveButtonContainer">
+                    <button id = "SaveSelectedPreferencesButton"  class="btn btn-purple ">
+                        Save selected preferences
+                    </button>
+                </div>
+                <div id = "DietSelectionMenuBody">
+                    <button class="SelectionButton " id = "vegetarian">
+                        Vegetarian
+        
+                    </button>
+                    <button class="SelectionButton  " id = "vegan">
+                        Vegan
+        
+                    </button>
+                    <button class="SelectionButton " id = "kosher">
+                        Kosher
+        
+                    </button>
+                    <button class="SelectionButton  " id = "halal">
+                        Halal
+        
+                    </button>
+                    <button class="SelectionButton  " id = "gluten-free">
+                        Gluten-free
+        
+                    </button>
+                </div>
+            </div>
             
+        </div>
+        <div id = "overlay" >
+
         </div>
         <div class = "MealTime">
             <div>
