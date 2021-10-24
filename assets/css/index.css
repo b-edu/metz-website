@@ -115,6 +115,10 @@ html, body {
     padding: .5rem 1rem;
 }
 
+.TakeawayOrder {
+    padding-left: 3%;
+}
+
 /* Make button darker on hover or focus (Brendan) */
 .btn:hover, .btn:focus {
     background: #CBD5E1;

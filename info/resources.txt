@@ -6,3 +6,7 @@ https://javatpoint.com/javascript-onclick-event
 
 Vlad:
 https://www.youtube.com/watch?v=MBaw_6cPmAw - This video was used for the Diet and Allergy Selection Menu.
+https://www.w3schools.com/tags/tag_textarea.asp
+https://www.w3schools.com/tags/tag_select.asp
+https://www.w3schools.com/jsref/prop_element_classlist.asp
+https://www.w3schools.com/jsref/prop_element_children.asp

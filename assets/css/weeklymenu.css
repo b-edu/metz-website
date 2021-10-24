@@ -34,10 +34,19 @@
     text-align: center;
 }
 
+.WeeklyMenuBanner > h2{
+    color: #5C66C1;
+}
 
+.Weeks {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3%;
+}
 
 .MonthSelector  {
     display: flex;
+    padding: 3%;
     
 }
 
@@ -54,6 +63,7 @@
 
 .lowerPanel {
 background-color: antiquewhite;
+padding: 3%;
     
 
 
