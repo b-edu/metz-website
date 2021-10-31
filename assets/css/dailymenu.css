@@ -1,3 +1,20 @@
+/* General rules for body (Brendan) */
+html, body {
+    /* Use Earthbound font imported in `<head>` */
+    font-family: 'LinikSansRegular', sans-serif;
+
+    /* Remove body's default margins */
+    margin: 0;
+
+    /* Ensure content doesn't hit the bottom of the body, making it look cut off when scrolling down */
+    padding-bottom: 3rem;
+}
+.main {
+    /* Set body to the center of the page */
+    max-width: 100%;
+    margin: 0 auto;
+    background: rgb(226, 205, 205);
+}
 .btn {
     text-decoration: none;
     color: #1E293B;
@@ -5,6 +22,73 @@
     border-radius: .25rem;
     padding: .5rem 1rem;
 }
+/* Wrap around `.nav` element. This fixes a glitch applying margin to the main `.nav` class (Brendan) */
+.nav-wrap {
+    margin: .5rem 1rem;
+}
+
+/* Wrapper around `.nav` children (Brendan) */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: #cecece; */
+    width: 100%;
+}
+
+/* Nav image (Brendan) */
+.nav-logo {
+    max-width: 100%;
+}
+
+/* Add 0.75rem padding between rows of nav links if they wrap (Brendan) */
+.nav-links-wrap {
+    row-gap: .75rem;
+}
+
+/* Add a right margin to all `.btn` elements in `.nav-links-wrap` (Brendan) */
+.nav-links-wrap > .btn {
+    margin-right: 1rem;
+}
+
+/* Main hero element (Brendan) */
+.hero {
+    margin-bottom: 1rem;
+}
+
+/* Ham background (Brendan) */
+.hero-img {
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/ham.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Text banner below Ham background (Brendan) */
+.hero-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background: #BBC0ED;
+    box-shadow: 0px 4px 0px #5C66C1, 0px -4px 0px #5C66C1;
+    padding: 1rem;
+}
+
+/* Text inside Ham text banner (Brendan) */
+.hero-banner-title-span {
+    color: #06004F;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+/* Add a right margin for all hero buttons but the last (Brendan) */
+.hero-banner-buttons .btn:not(:last-child) {
+    margin-right: .5rem;
+}
+
 .SelectionButton {
     text-decoration: none;
     color: #1E293B;
@@ -23,7 +107,24 @@
     border: 1.5px solid #32397a;
 }
 
-
+.Breakfast {
+    display: none;
+}
+.Lunch {
+    display: none;
+}
+.Dinner {
+    display: none;
+}
+.Breakfast.active {
+    display: initial;
+}
+.Lunch.active {
+    display: initial;
+}
+.Dinner.active {
+    display: initial;
+}
 .SelectionButton.active {
     background: #5C66C1;
     color: #ffffff;
@@ -43,7 +144,13 @@
     
 }
 
-.DailyMenuBanner > h2, a{
+.DailyMenuBanner > h2{
+    margin-left: 10%;
+    text-align: center;
+    justify-content: center;
+    
+}
+.DailyMenuBanner >  a{
     margin-left: 10%;
     text-align: center;
     justify-content: center;
@@ -128,6 +235,13 @@
 
 .saveButton {
     background-color: green;
+   
+    
+    border-radius: .25rem;
+    padding: .5rem 1rem;
+}
+.saveButton:hover{
+    background: rgb(4, 95, 4);
 }
 
 #DietSelectionMenuBody > button{

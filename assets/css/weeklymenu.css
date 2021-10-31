@@ -21,21 +21,50 @@
 .btn-purple:hover, .btn-purple:focus {
     background: #414992;
 }
+.weekButton {
+    color: #ffffff;
+    background: #5C66C1;
+    border-radius: .25rem;
+    padding: .5rem 1rem;
+}
+.weekButton:hover {
+    background: #414992;
+}
+.weekButton.active {
+    background: #414992;
+}
+.monthButton {
+    color: #ffffff;
+    background: #5C66C1;
+    border-radius: .25rem;
+    padding: .5rem 1rem;
+}
+.monthButton:hover {
+    background: #414992;
+}
+.monthButton.active {
+    background: #414992;
+}
 
 .WeeklyMenuBanner {
     width: 100%;
     display: inline-grid;
     grid-template-columns: 33% 33% 33%;
+    padding-bottom: 3%;
+    padding-top: 2%;
     
 }
 
-.WeeklyMenuBanner > h2, a{
+.WeeklyMenuBanner >  a{
     margin-left: 10%;
     text-align: center;
+    justify-content: center;
 }
-
 .WeeklyMenuBanner > h2{
     color: #5C66C1;
+    margin-left: 10%;
+    text-align: center;
+    justify-content: center;
 }
 
 .Weeks {
@@ -69,7 +98,7 @@ padding: 3%;
 
 }
 
-.lowerPanel > .dayMenu > button{
+.lowerPanel > .dayMenu > a > button{
     
     text-align: center;
     width: 100%;

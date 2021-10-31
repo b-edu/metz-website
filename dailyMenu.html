@@ -2,12 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metz of New College - Daily Menu </title>
+    <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/dailymenu.css">
-    
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/linik-sans" type="text/css"/>
 </head>
 <body >
+    <div class="nav-wrap">
+        <div class="nav">
+            <div>
+                <img src="assets/img/ncf-metz-logos.png" alt="New College logo" class="nav-logo">
+            </div>
+            <div>
+                <div class="nav-links-wrap">
+                    <a href="index.html" class="btn">Home</a>
+                    <a href="https://www.ncf.edu/campus-life/dining/" target="_blank" class="btn">Plans & Pricing</a>
+                    <a href="sustainability.html" class="btn">Sustainability</a>
+                    <a href="services.html" class="btn">Services</a>
+                    <a href="about.html" class="btn">About</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero-img"></div>
+        <div class="hero-banner">
+            <div class="hero-banner-title">
+                <span class="hero-banner-title-span">It's All About the Food</span>
+            </div>
+            
+        </div>
+    </div>
     <div class = "upperPanel">
         <div class = "DailyMenuBanner">
             <a href="index.html" class="btn btn-purple">Home</a>
@@ -34,7 +62,7 @@
                     
                 </div>
                 <div id = "SaveButtonContainer">
-                    <button id = "SaveSelectedPreferencesButton"  class="btn btn-purple saveButton">
+                    <button id = "SaveSelectedPreferencesButton"  class=" saveButton">
                         Save selected preferences
                     </button>
                 </div>
@@ -73,19 +101,19 @@
         </div>
         <div class = "MealTime">
             <div>
-            <button class="btn btn-purple Breakfast">
+            <button class="btn btn-purple " id = "BreakfastButton">
                Breakfast
 
             </button>
         </div>
         <div>
-            <button class="btn btn-purple Lunch">
+            <button class="btn btn-purple " id = "LunchButton">
                 Lunch
 
             </button>
         </div>
         <div>
-            <button class="btn btn-purple Dinner">
+            <button class="btn btn-purple " id = "DinnerButton">
                 Dinner
 
             </button>
@@ -96,28 +124,39 @@
 
     <div class = "lowerPanel">
         <div class = "foodMenu">
-            <button id = "MenuOption1">
+            <button id = "MenuOption1" class = "Breakfast active">
                 <img src="assets\img\image_from_ios.jpg" alt="French Fries">
                 <p ></p>
                 
             </button>
-            <button id = "MenuOption2">
+            <button id = "MenuOption2" class = "Lunch">
                 <img src="assets\img\image_from_ios (1).jpg" alt="Cookies">
                 <p ></p>
                 
             </button>
-            <button id = "MenuOption3">
-                <img src = "assets\img\image_from_ios (2).jpg" alt="Belgian Wuffles">
+            <button id = "MenuOption3" class = "Lunch">
+                <img src = "assets\img\image_from_ios (2).jpg" alt="Belgian Wuffles" >
                 <p ></p>
                 
             </button>
-            <button id = "MenuOption4">
-                <img src="assets\img\image_from_ios (3).jpg" alt="Cheeseburger">
+            <button id = "MenuOption4" class = "Dinner">
+                <img src="assets\img\image_from_ios (3).jpg" alt="Cheeseburger" >
                 <p ></p>
                 
             </button>
         
         </div>
+    </div>
+    <div class="box box-spread">
+        <span class="box-title">Follow Us on Social Media!</span>
+        <div class="icon-wrap" id="icon-wrap">
+            <!-- <a href="https://twitter.com" target="_blank"><img src="/assets/img/twitter-icon.png" alt="Twitter" class="icon"></a>
+            <a href="https://instagram.com" target="_blank"><img src="/assets/img/instagram-icon.png" alt="Twitter" class="icon"></a>
+            <a href="https://facebook.com" target="_blank"><img src="/assets/img/facebook-icon.png" alt="Twitter" class="icon"></a> -->
+        </div>
+    </div>
+    <div class="nav-wrap">
+        <p>This website has been made by the members of the Karamazov Brothers team, Brendan Hersh and Vlad Tsimoshchanka, as a college project for the Front-End class.</p>
     </div>
     <script src="assets\js\dailymenu.js"></script>
 </body>

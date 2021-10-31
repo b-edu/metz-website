@@ -2,6 +2,23 @@ var HamiltonHoursButton = document.getElementById("HamiltonHoursButton");
 var BoarHoursButton = document.getElementById("BoarHoursButton");
 var HamiltonHours = document.getElementById("HamiltonHours");
 var BoarHours = document.getElementById("BoarHours");
+var submitButton = document.getElementById("submitButton");
+var submitOrder = document.getElementById("submitOrder");
+
+
+
+submitOrder.onclick = function () {
+   
+    alert("Your order has been submitted!");
+};
+
+submitButton.onclick = function () {
+    var feedback = document.getElementsByClassName("feedback");
+    for(var i = 0; i < feedback.length; i++ ){
+        feedback[i].value = "";
+    }
+    alert("Thank you for your feedback!");
+};
 
 BoarHours.style.visibility = "visible";
 //console.log("here");

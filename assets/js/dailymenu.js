@@ -12,12 +12,65 @@
 var openButton = document.getElementById("OpenButton");
 var closeButton = document.getElementById("CloseButton");
 var overlay = document.getElementById("overlay");
+var saveButton = document.getElementById("SaveSelectedPreferencesButton");
+
+var BreakfastButton = document.getElementById("BreakfastButton");
+var LunchButton = document.getElementById("LunchButton");
+var DinnerButton = document.getElementById("DinnerButton");
 
 var vegetarian = document.getElementById("vegetarian");
 var vegan = document.getElementById("vegan");
 var halal = document.getElementById("halal");
 var kosher = document.getElementById("kosher");
 var gluten = document.getElementById("gluten-free");
+
+BreakfastButton.onclick = function () {
+    var breakfastItems = document.getElementsByClassName("Breakfast");
+    var lunchItems = document.getElementsByClassName("Lunch");
+    var dinnerItems = document.getElementsByClassName("Dinner");
+    for(var i = 0; i < breakfastItems.length; i++){
+        breakfastItems[i].classList.add("active");
+    }
+    for(var i = 0; i < lunchItems.length; i++){
+        lunchItems[i].classList.remove("active");
+    }
+    for(var i = 0; i < dinnerItems.length; i++){
+        dinnerItems[i].classList.remove("active");
+    }
+};
+LunchButton.onclick = function () {
+    var breakfastItems = document.getElementsByClassName("Breakfast");
+    var lunchItems = document.getElementsByClassName("Lunch");
+    var dinnerItems = document.getElementsByClassName("Dinner");
+    for(var i = 0; i < breakfastItems.length; i++){
+        breakfastItems[i].classList.remove("active");
+    }
+    for(var i = 0; i < lunchItems.length; i++){
+        lunchItems[i].classList.add("active");
+    }
+    for(var i = 0; i < dinnerItems.length; i++){
+        dinnerItems[i].classList.remove("active");
+    }
+};
+
+
+
+
+DinnerButton.onclick = function () {
+    var breakfastItems = document.getElementsByClassName("Breakfast");
+    var lunchItems = document.getElementsByClassName("Lunch");
+    var dinnerItems = document.getElementsByClassName("Dinner");
+    for(var i = 0; i < breakfastItems.length; i++){
+        breakfastItems[i].classList.remove("active");
+    }
+    for(var i = 0; i < lunchItems.length; i++){
+        lunchItems[i].classList.remove("active");
+    }
+    for(var i = 0; i < dinnerItems.length; i++){
+        dinnerItems[i].classList.add("active");
+    }
+};
+
 
 vegetarian.addEventListener('clcik', () => {
     var option = document.getElementById("vegetarian");
@@ -35,6 +88,9 @@ function selected(option){
     option.classList.toggle("active");
 }
 
+saveButton.addEventListener('click', () => {
+    alert("Preferences saved!");
+})
 openButton.addEventListener('click', () => {
     var menu = document.getElementById("DietSelectionMenu");
     openMenu(menu);
